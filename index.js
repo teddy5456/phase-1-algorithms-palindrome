@@ -1,13 +1,30 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(string) {
+  
+  return string === string.split('').reverse().join('');
 }
 
 /* 
-  Add your pseudocode here
+  function isPalindrome(string) {
+  const characters = string.split("");
+  const reversedCharacters = characters.reverse();
+  const reversedString = reversedCharacters.join("");
+  if (string === reversedString) {
+    return true;
+  } else {
+    return false;
+  }
+}
 */
 
 /*
-  Add written explanation of your solution here
+ This function takes a string as an argument,
+  and then checks if the resulting string reads the same forwards and backwards using 
+  the split(), reverse(), and join() methods. If the string is a palindrome, 
+  the function returns true, otherwise it returns false.
+  split method splits the input into an array of characters
+  reverse method reverses the order of the elements in the array
+  join then takes the new array elements and joins them back to a single string.
+  the function then checks if the string is the same in both
 */
 
 // You can run `node index.js` to view these console logs
